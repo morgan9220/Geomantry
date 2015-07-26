@@ -12,9 +12,9 @@ public:
 	LineSegment();
 	LineSegment(Point, Point);
 	void setEnd1(Point);
-	double getEnd1();
+	Point getEnd1();
 	void setEnd2(Point);
-	double getEnd2();
+	Point getEnd2();
 	double length();
 	double slope();
 };

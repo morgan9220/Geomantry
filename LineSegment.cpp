@@ -20,7 +20,7 @@ void LineSegment::setEnd1(Point p1)
 	p1.setYCoord(0);
 }
 
-double LineSegment::getEnd1()
+Point LineSegment::getEnd1()
 {
 	return p1;
 }
@@ -31,7 +31,7 @@ void LineSegment::setEnd2(Point p2)
 	p2.setYCoord(0);
 }
 
-double LineSegment::getEnd2()
+Point LineSegment::getEnd2()
 {
 	return p2;
 }
@@ -45,7 +45,7 @@ double LineSegment::slope()
 {
 	if (p2.getXCoord() - p1.getXCoord() == 0)
 	{
-		return -55555;
+		return -1;
 	}
 	else
 	{
