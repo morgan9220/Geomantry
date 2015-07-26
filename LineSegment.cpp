@@ -1,6 +1,7 @@
 #include <iostream>
 #include "LineSegment.hpp"
 
+
 LineSegment::LineSegment(Point p1, Point p2)
 {
 	setEnd1(p1);
@@ -9,14 +10,14 @@ LineSegment::LineSegment(Point p1, Point p2)
 
 LineSegment::LineSegment()
 {
-	setEnd1(0);
-	setEnd2(0);
+	setEnd1(Point(0, 0));
+	setEnd2(Point(0, 0));
 }
 
 void LineSegment::setEnd1(Point p1)
 {
-	p1.setXCoord();
-	p1.setYCoord();
+	p1.setXCoord(0);
+	p1.setYCoord(0);
 }
 
 double LineSegment::getEnd1()
@@ -26,8 +27,8 @@ double LineSegment::getEnd1()
 
 void LineSegment::setEnd2(Point p2)
 {
-	p2.setXCoord();
-	p2.setYCoord();
+	p2.setXCoord(0);
+	p2.setYCoord(0);
 }
 
 double LineSegment::getEnd2()
